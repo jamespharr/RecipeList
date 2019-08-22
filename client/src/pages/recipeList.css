@@ -1,0 +1,97 @@
+body{
+  background-color: #FADC60;
+}
+
+#results{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1auto;
+  grid-template-areas: ". . . .";
+}
+
+#navbar-recipes{
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #d7af70;
+  border: 0;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  background-image: url(./fruity.png);
+  position: relative;
+  /* z-index: 3 */
+}
+
+#fruit-boys{
+  justify-self: end;
+  padding-right: 25px;
+  height: 11rem;
+}
+
+#search-input{
+  background-color: #7CB777;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 100%;
+  place-items: center;
+
+}
+
+h1{
+  margin: 0;
+  padding-top: 10px;
+  font-size: 3rem;
+  color: #384649;
+
+}
+
+#results{
+  background-color: #FD6F71;
+  height: inherit;
+}
+
+.recipe{
+  background-color: #384649;
+clip-path: ellipse(35% 50% at 50% 50%);
+display: grid;
+grid-template-rows: 3fr 1fr;
+grid-template-areas:  "img" "recipe-info";
+padding: 5rem;
+margin-top: 5rem;
+text-align: center;
+
+}
+
+.recipe-name{
+  justify-self: center;
+  align-self: flex-start;
+  font-size: 1rem;
+  padding-top: 5px;
+  /* width: 1rem; */
+}
+
+.recipe-img{
+  justify-self: center;
+  align-self: flex-end;
+  height: 10rem;
+  border: 1px #0b0d0e solid;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.servings{
+  justify-self: center;
+  align-self: flex-start;
+  margin: 0;
+}
+
+#search-bar{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 350px;
+  height: 30px;
+  align-self: center;
+  font-size: 2rem;
+}

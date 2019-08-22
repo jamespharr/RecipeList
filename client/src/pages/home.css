@@ -1,0 +1,138 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-home{
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #ce8964;
+  border: 0;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  background-image: url(./pattern.png);
+  position: relative;
+  z-index: 3;
+}
+
+nav{
+  padding-left: 25px;
+  font-size: 3rem;
+
+}
+
+a{
+  color: #f4f1de;
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+#app-name{
+  justify-self: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 6rem;
+  font-weight: normal;
+  color: #f4f1de;
+  margin: 0;
+}
+
+#burger{
+  justify-self: end;
+  padding-right: 25px;
+  height: 11rem;
+  /* TODO: make burger clickable; changes page theme? */
+}
+
+header{
+  padding-left: 25px;
+  background-color: #94c673;
+  height: 5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  z-index: 2;
+}
+
+h2{
+  margin: 0;
+  padding-top: 25px;
+}
+
+#head-first{
+  color: #4D6805;
+  font-weight: normal;
+}
+
+#tomato{
+  background-color: #bf2f42;
+  height: 8rem;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top-left top-center top-right" "bottom-left bottom-center bottom-right";
+
+}
+.tomato-text{
+  font-weight: normal;
+  padding-left: 25px;
+  color: #edc6cb;
+  font-size: 25px;
+}
+#fluff-text{
+   grid-area: top-center;
+   place-self: center;
+}
+#left-text{
+   grid-area: bottom-left;
+   align-self: center;
+   justify-self: flex-end;
+}
+#center-text{
+   grid-area: bottom-center;
+   place-self: center;
+}
+#right-text{
+   grid-area: bottom-right;
+   align-self: center;
+   justify-self: flex-start;
+}
+
+#meat{
+  background-color: #946463;
+  height: 20rem;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1.3fr 0.3fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Search-recipe middle recipe-generator";
+  place-items: center;
+}
+#cookbook{
+  grid-area: middle;
+}
+/* #pickle{
+  grid-area: middle;
+} */
+/* #diet{
+  grid-area: recipe-generator;
+} */
+#bottom-bun{
+  background-color: #c98661;
+  height: 13rem;
+  box-shadow: 0 2px 6px 0
+  hsla(0, 0%, 0%, 0.5);
+  z-index: 3;
+}
